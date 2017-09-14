@@ -8,7 +8,8 @@
 
   - Create a directory for the container: `ds init squid @squid`
 
-  - Fix settings and squid.conf : `cd /var/ds/squid/ ; vim settings.sh ; vim squid.conf`
+  - Fix the settings: `cd /var/ds/squid/ ; vim settings.sh`
 
   - Build image, create the container and configure it: `ds make`
 
+  - Change squid.conf and restart: `vim squid.conf ; ds restart`

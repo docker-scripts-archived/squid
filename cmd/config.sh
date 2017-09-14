@@ -8,4 +8,6 @@ _EOF
 
 cmd_config() {
     ds runcfg set_prompt
+    ds runcfg ssmtp
+    ds runcfg squid
 }

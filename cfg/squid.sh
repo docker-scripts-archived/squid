@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 ### log dir
 mkdir -p /var/log/squid

@@ -8,8 +8,9 @@ _EOF
 
 rename_function cmd_create orig_cmd_create
 cmd_create() {
-    cp $APP_DIR/squid.conf .
-    cp $APP_DIR/squid.conf.dist .
+    [[ -f squid.conf ]] || cp $APP_DIR/squid.conf .
+    ln -sf $APP_DIR/squid.conf.dist
+    ln -sf $APP_DIR/squid.conf.cache-everything
     mkdir -p cache logs/squid
 
     unset NETWORK

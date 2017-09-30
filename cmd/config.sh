@@ -7,7 +7,7 @@ _EOF
 }
 
 cmd_config() {
-    ds runcfg set_prompt
-    ds runcfg ssmtp
-    ds runcfg squid
+    ds inject set_prompt.sh
+    ds inject ssmtp.sh
+    ds inject squid.sh
 }
